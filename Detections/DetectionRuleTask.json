@@ -1,0 +1,24 @@
+{
+  "kind": "Scheduled",
+  "properties": {
+    "displayName": "Suspicious Sign-in Attempts",
+    "description": "This rule detects sign-in attempts that failed.",
+    "enabled": true,
+    "severity": "Medium",
+    "query": "SigninLogs | where ResultType != 0",
+    "queryFrequency": "PT1H",
+    "queryPeriod": "PT1H",
+    "triggerOperator": "GreaterThan",
+    "triggerThreshold": 5,
+    "suppressionDuration": "PT1H",
+    "suppressionEnabled": false,
+    "tactics": ["InitialAccess"],
+    "alertRuleTemplateName": "",
+    "incidentConfiguration": {
+      "createIncident": true,
+      "groupingConfiguration": {
+        "enabled": false
+      }
+    }
+  }
+}
