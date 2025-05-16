@@ -1,0 +1,10 @@
+{
+  "name": "My Sentinel Content Repo",
+  "version": "1.0.0",
+  "description": "Deploy rule, workbook and playbook to Sentinel",
+  "contentType": [
+    "AnalyticsRule",
+    "Workbook",
+    "Playbook"
+  ]
+}
